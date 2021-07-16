@@ -60,7 +60,7 @@ if Config.PRIVATE_GROUP_ID != 0:
             pmpermit_sql.approve(user.id, reason)
             await edit_delete(
                 event,
-                f"`Approved to pm `[{user.first_name}](tg://user?id={user.id})",
+                f"`Pm അപ്പ്രൂവ് ചെയ്തിരിക്കുന്നു`[{user.first_name}](tg://user?id={user.id})",
                 5,
             )
             if user.id in PMMESSAGE_CACHE:
@@ -125,7 +125,7 @@ if Config.PRIVATE_GROUP_ID != 0:
             await asyncio.sleep(30)
         else:
             await event.edit(
-                f"`You are blocked Now .You Can't Message Me from now..`[{user.first_name}](tg://user?id={user.id})"
+                f"`മലരേ നിന്നോടല്ലേ പറഞ്ഞെ ഓണർ ഓൺലൈൻ വന്നാ റിപ്ലൈ തരും എന്ന് ഞാൻ ബ്ലോക്ക് ആക്കാൻ പോകുവാ😠`[{user.first_name}](tg://user?id={user.id})"
             )
             await event.client(functions.contacts.BlockRequest(user.id))
 
@@ -139,7 +139,7 @@ if Config.PRIVATE_GROUP_ID != 0:
                 return
         await event.client(functions.contacts.UnblockRequest(user.id))
         await event.edit(
-            f"`You are Unblocked Now .You Can Message Me From now..`[{user.first_name}](tg://user?id={user.id})"
+            f"`നിന്നെ ഇപ്പൊ അൺബ്ലോക്ക് ആക്കിയിരിക്കുന്നു..ഇനി മെസ്സേജ് അയച്ചോ..`[{user.first_name}](tg://user?id={user.id})"
         )
 
     @bot.on(admin_cmd(pattern="listapproved$"))
