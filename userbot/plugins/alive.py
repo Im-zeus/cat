@@ -28,7 +28,7 @@ async def amireallyalive(alive):
         cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
         cat_caption += f"**{EMOJI} Uptime :** `{uptime}\n`"
         cat_caption += f"**{EMOJI} Master:** {mention}\n\n"
-        cat_caption += "   **[❣️DEPLOY DANGER_CAT❣️]**(https://github.com/dangerbots/danger_cat) "
+        cat_caption += "   **[🧚‍♀️✨DEPLOY✨🧚‍♀️]**(https://github.com/Im-zeus/cat) "
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
@@ -43,7 +43,7 @@ async def amireallyalive(alive):
             f"**{EMOJI} Python Version :** `{python_version()}\n`"
             f"**{EMOJI} Uptime :** `{uptime}\n`"
             f"**{EMOJI} Master:** {mention}\n\n"
-                          "   **[❣️DEPLOY DANGER_CAT❣️]**(https://github.com/dangerbots/danger_cat) ",
+                          "   **[🧚‍♀️✨DEPLOY✨🧚‍♀️]**(https://github.com/Im-zeus/cat) ",
           )
      
 
